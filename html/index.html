@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/swiper.min.css">
+  <link rel="stylesheet" href="../css/public.css">
+  <script src="../js/jquery.js"></script>
+  <script src="../js/swiper.min.js"></script>
+  <script src="../js/public.js"></script>
+</head>
+
+<body>
+
+  <!-- 公共头部 -->
+  <div class="header">
+    <div class="logo"><img src="../img/logo.png" alt=""></div>
+    <div class="nav fz17">
+      <div class="nav-item"><img src="../img/btl_sy.png" alt="">首页</div>
+      <div class="nav-item"><img src="../img/btl_ghfx.png" alt="">干货分享</div>
+      <div class="nav-item"><img src="../img/btl_gjx.png" alt="">工具箱</div>
+      <div class="nav-item"><img src="../img/btl_lpzx.png" alt="">礼品中心</div>
+      <div class="nav-item"><img src="../img/btl_grzx.png" alt="">个人中心</div>
+      <div class="nav-item"><img src="../img/btl_tc.png" alt="">退出</div>
+    </div>
+  </div>
+  <!-- 公共头部 -->
+  <div class="page page-index">
+    <div style="width: 100%;">
+      <div class="swiper-container" id="banner">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="../img/banner.png" alt=""></div>
+          <div class="swiper-slide"><img src="../img/banner.png" alt=""></div>
+          <div class="swiper-slide"><img src="../img/banner.png" alt=""></div>
+          
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <!-- 公告 -->
+    <div class="notice-box df-ac" style="width: 100%;">
+      <div class="w df-ac">
+        <div style="margin-right: 60px;">最新公告</div>
+        <div class="swiper-container " id="notice">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide df-ac"><img src="../img/zxgg_icon.png" alt="" class="notice-icon">礼品网广东仓向物居2月9号开始正式发货</div>
+            <div class="swiper-slide df-ac"><img src="../img/zxgg_icon.png" alt="" class="notice-icon">礼品网广东仓向物居2月9号开始正式发货</div>
+            <div class="swiper-slide df-ac"><img src="../img/zxgg_icon.png" alt="" class="notice-icon">礼品网广东仓向物居2月9号开始正式发货</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="index-main w">
+      <div class="fsb" style="margin-bottom: 77px;">
+        <div class="card-item"><img src="../img/ssksp.png" alt=""><h5>搜索卡首屏</h5><p>人气提升 关键词流量</p></div>
+        <div class="card-item"><img src="../img/wwzyj.png" alt=""><h5>旺旺照妖镜</h5><p>小号违规 记录查询</p></div>
+        <div class="card-item"><img src="../img/sycmgj.png" alt=""><h5>生意参谋工具</h5><p>生意参谋指数 全自动转化</p></div>
+      </div>
+      <div class="goods-title">
+        <h2>精选商品 <span>Selected commodities</span></h2>
+      </div>
+      <div class="df" style="flex-wrap: wrap;">
+        <div class="good-item">
+          <img src="../img/good.png" alt="">
+          <h4>云笑万根毛牙刷</h4>
+          <div class="good-item-footer">
+            <span>￥2.10元/单</span>
+            <div class="tobuy">去下单</div>
+          </div>
+        </div>
+        <div class="good-item">
+          <img src="../img/good.png" alt="">
+          <h4>云笑万根毛牙刷</h4>
+          <div class="good-item-footer">
+            <span>￥2.10元/单</span>
+            <div class="tobuy">去下单</div>
+          </div>
+        </div>
+        <div class="good-item">
+          <img src="../img/good.png" alt="">
+          <h4>云笑万根毛牙刷</h4>
+          <div class="good-item-footer">
+            <span>￥2.10元/单</span>
+            <div class="tobuy">去下单</div>
+          </div>
+        </div>
+        <div class="good-item">
+          <img src="../img/good.png" alt="">
+          <h4>云笑万根毛牙刷</h4>
+          <div class="good-item-footer">
+            <span>￥2.10元/单</span>
+            <div class="tobuy">去下单</div>
+          </div>
+        </div>
+        <div class="good-item">
+          <img src="../img/good.png" alt="">
+          <h4>云笑万根毛牙刷</h4>
+          <div class="good-item-footer">
+            <span>￥2.10元/单</span>
+            <div class="tobuy">去下单</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <div class="side-bar">
+    <img src="../img/xuanf_qq.png" alt="">
+    <img src="../img/xuanf_wx.png" alt="">
+    <img src="../img/xuanf_dh.png" alt="">
+    <div class="showBox">
+      
+    </div>
+  </div>
+
+  <script>
+    $(function(){
+       var mySwiper = new Swiper('#banner', {
+        //direction: 'vertical', // 垂直切换选项
+        loop: true, // 循环模式选项
+        autoplay:true,
+        // 如果需要分页器
+        pagination: {
+          el: '.swiper-pagination',
+        },
+      })  
+      var swiper = new Swiper('#notice', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        autoplay: {
+          delay: 4000,
+          stopOnLastSlide: false,
+          disableOnInteraction: true,
+          },
+      });
+    })
+  </script>
+
+  <!-- 公共footer -->
+  <div class="footer tac fz12">Copyright ©2020 yongshengds.cn All Rights Reserved.</div>
+  <!-- 公共footer -->
+</body>
+
+</html>

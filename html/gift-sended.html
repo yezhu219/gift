@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/public.css">
+  <script src="../js/jquery.js"></script>
+  <script src="../js/public.js"></script>
+</head>
+
+<body>
+
+  <!-- 公共头部 -->
+  <div class="header">
+    <div class="logo">
+      <img src="../img/logo.png" alt="">
+    </div>
+    <div class="nav fz17">
+      <div class="nav-item"><img src="../img/btl_sy.png" alt="">首页</div>
+      <div class="nav-item"><img src="../img/btl_ghfx.png" alt="">干货分享</div>
+      <div class="nav-item"><img src="../img/btl_gjx.png" alt="">工具箱</div>
+      <div class="nav-item"><img src="../img/btl_lpzx.png" alt="">礼品中心</div>
+      <div class="nav-item"><img src="../img/btl_grzx.png" alt="">个人中心</div>
+      <div class="nav-item"><img src="../img/btl_tc.png" alt="">退出</div>
+    </div>
+  </div>
+  <!-- 公共头部 -->
+  <div class="page">
+    <!-- 菜单栏 -->
+    <div class="menu">
+      <div class="gift-center bg-f">
+        <div class="menu-title ">卖家工具箱</div>
+        <div class="menu-item-content">
+          <p class="menu-item-title">礼品中心</p>
+          <div style="display: none;" class="sub-menu">
+            <div class="menu-item-sub active">礼品列表</div>
+            <div class="menu-item-sub">已发礼品</div>
+            <div class="menu-item-sub">礼品中心充值</div>
+          </div>
+        </div>
+        <div class="menu-item-content">
+          <p class="menu-item-title">卡首屏</p>
+          <div style="display: none;" class="sub-menu">
+          </div>
+        </div>
+        <div class="menu-item-content">
+          <p class="menu-item-title">防假后台验号</p>
+          <div style="display: none;" class="sub-menu">
+          </div>
+        </div>
+        <div class="menu-item-content">
+          <p class="menu-item-title">淘宝查排名</p>
+          <div style="display: none;" class="sub-menu">
+          </div>
+        </div>
+        <div class="menu-item-content">
+          <p class="menu-item-title">京东查排名</p>
+          <div style="display: none;" class="sub-menu">
+          </div>
+        </div>
+        <div class="menu-item-content">
+          <p class="menu-item-title">拼多多工具</p>
+          <div style="display: none;" class="sub-menu">
+          </div>
+        </div>
+        <div class="menu-item-content">
+          <p class="menu-item-title">其他工具</p>
+          <div style="display: none;" class="sub-menu">
+          </div>
+        </div>
+        <div class="menu-item-content">
+          <p class="menu-item-title">淘宝人气提升</p>
+          <div style="display: none;" class="sub-menu">
+          </div>
+        </div>
+        <div class="menu-item-content">
+          <p class="menu-item-title">京东人气提升</p>
+          <div style="display: none;" class="sub-menu">
+          </div>
+        </div>
+        <div class="menu-item-content">
+          <p class="menu-item-title">拼多多人气提升</p>
+          <div style="display: none;" class="sub-menu">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 菜单栏 -->
+
+
+
+    <div class="main page-gift-list" style="background-color: inherit;">
+     <form action="" class="mb-20">
+       <div style="display: flex; flex-wrap: wrap; padding: 30px 0 10px 0;" class="bg">
+        <div class="form-item inline"><span>快递单号：</span><input type="text" placeholder=""></div>
+        <div class="form-item inline">
+          <span>礼品类型：</span>
+          <div class="m-select" id="gift-type">
+            <p class="holder">全部</p>
+            <div class="m-select-option" style="display: none;">
+              <div class="m-select-item">1-1</div>
+              <div class="m-select-item">2-2</div>
+              <div class="m-select-item">3-3</div>
+              <div class="m-select-item">4-4</div>
+            </div>
+          </div>
+        </div>
+        <div class="form-item inline">
+          <span>快递类型：</span>
+          <div class="m-select" id="express">
+            <p class="holder">全部</p>
+            <div class="m-select-option" style="display: none;">
+              <div class="m-select-item">1-1</div>
+              <div class="m-select-item">2-2</div>
+              <div class="m-select-item">3-3</div>
+              <div class="m-select-item">4-4</div>
+            </div>
+          </div>
+        </div>
+        <div class="form-item inline"><span>订单编号：</span><input type="text" placeholder=""></div>
+        <div class="form-item inline"><span>开始日期：</span><input type="text" placeholder=""></div>
+        <div class="form-item inline"><span>结束日期：</span><input type="text" placeholder=""></div>
+        <div class="form-item inline"><span>收件人姓名：</span><input type="text" placeholder=""></div>
+        <div class="form-item inline"><span></span>
+          <div class="df" style="flex: 1;">
+            <div class="btn-search">搜 索</div>
+            <div class="export-order">导出订单</div>
+          </div>
+        </div>
+        <!-- </div> -->
+       </div>
+     </form>
+
+     <div style="padding: 20px 15px 70px 15px;" class="bg-f">
+      <div class="tip-warn mb-20">【浙江仓】和【广州韵达仓】礼品正常发货中，部分地区时效依然难以保障，如果有时效问题，请于后台提交工单</div>
+      <div class="table-container" style="padding: 0;">
+        <table>
+          <thead>
+            <th>快递名称</th>
+            <th>快递单号</th>
+            <th>收货地址</th>
+            <th>下单时间</th>
+            <th>订单总金额</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>圆通快递</td>
+              <td>323298433200121200</td>
+              <td>上海市静安区梅川路幸福一号小区</td>
+              <td>2020-04-10 10:24:06</td>
+              <td>36.00</td>
+            </tr>
+           
+          </tbody>
+        </table>
+        <div class="pagination">
+          <div class="pre">上一页</div>
+          <div class="page-num active">1</div>
+          <div class="page-num">2</div>
+          <div class="next">下一页</div>
+        </div>
+      </div>
+     </div>
+
+    </div>
+
+  </div>
+
+
+
+
+  <!-- 公共footer -->
+  <div class="footer tac fz12">Copyright ©2020 yongshengds.cn All Rights Reserved.</div>
+  <!-- 公共footer -->
+</body>
+
+</html>
