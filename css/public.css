@@ -501,7 +501,7 @@
 .page.page-index {
   padding-left: 0;
   padding-right: 0;
-  padding-top: 70px ;
+  padding-top: 70px;
   display: block;
 }
 #banner {
@@ -773,7 +773,7 @@
   left: 0;
 }
 .form-item .m-select .m-select-option .m-select-item {
-  padding: 12px  ;
+  padding: 12px;
   background-color: rgba(0, 0, 0, 0.5);
 }
 .form-item .m-select .m-select-option .m-select-item:hover {
@@ -868,4 +868,22 @@ textarea::-moz-placeholder {
 .w {
   width: 1200px;
   margin: 0 auto;
+}
+.showBox {
+  padding: 7px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -120px;
+  background-color: #fff;
+}
+.showBox img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 8px;
+}
+.showBox p {
+  color: #5A5A5A;
+  font-size: 14px;
+  text-align: center;
 }

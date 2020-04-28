@@ -34,7 +34,7 @@
           <div class="swiper-slide"><img src="../img/banner.png" alt=""></div>
           <div class="swiper-slide"><img src="../img/banner.png" alt=""></div>
           <div class="swiper-slide"><img src="../img/banner.png" alt=""></div>
-          
+
         </div>
         <!-- 如果需要分页器 -->
         <div class="swiper-pagination"></div>
@@ -46,18 +46,30 @@
         <div style="margin-right: 60px;">最新公告</div>
         <div class="swiper-container " id="notice">
           <div class="swiper-wrapper">
-            <div class="swiper-slide df-ac"><img src="../img/zxgg_icon.png" alt="" class="notice-icon">礼品网广东仓向物居2月9号开始正式发货</div>
-            <div class="swiper-slide df-ac"><img src="../img/zxgg_icon.png" alt="" class="notice-icon">礼品网广东仓向物居2月9号开始正式发货</div>
-            <div class="swiper-slide df-ac"><img src="../img/zxgg_icon.png" alt="" class="notice-icon">礼品网广东仓向物居2月9号开始正式发货</div>
+            <div class="swiper-slide df-ac"><img src="../img/zxgg_icon.png" alt=""
+                class="notice-icon">礼品网广东仓向物居2月9号开始正式发货</div>
+            <div class="swiper-slide df-ac"><img src="../img/zxgg_icon.png" alt=""
+                class="notice-icon">礼品网广东仓向物居2月9号开始正式发货</div>
+            <div class="swiper-slide df-ac"><img src="../img/zxgg_icon.png" alt=""
+                class="notice-icon">礼品网广东仓向物居2月9号开始正式发货</div>
           </div>
         </div>
       </div>
     </div>
     <div class="index-main w">
       <div class="fsb" style="margin-bottom: 77px;">
-        <div class="card-item"><img src="../img/ssksp.png" alt=""><h5>搜索卡首屏</h5><p>人气提升 关键词流量</p></div>
-        <div class="card-item"><img src="../img/wwzyj.png" alt=""><h5>旺旺照妖镜</h5><p>小号违规 记录查询</p></div>
-        <div class="card-item"><img src="../img/sycmgj.png" alt=""><h5>生意参谋工具</h5><p>生意参谋指数 全自动转化</p></div>
+        <div class="card-item"><img src="../img/ssksp.png" alt="">
+          <h5>搜索卡首屏</h5>
+          <p>人气提升 关键词流量</p>
+        </div>
+        <div class="card-item"><img src="../img/wwzyj.png" alt="">
+          <h5>旺旺照妖镜</h5>
+          <p>小号违规 记录查询</p>
+        </div>
+        <div class="card-item"><img src="../img/sycmgj.png" alt="">
+          <h5>生意参谋工具</h5>
+          <p>生意参谋指数 全自动转化</p>
+        </div>
       </div>
       <div class="goods-title">
         <h2>精选商品 <span>Selected commodities</span></h2>
@@ -105,29 +117,35 @@
         </div>
       </div>
     </div>
-    
+
   </div>
 
   <div class="side-bar">
-    <img src="../img/xuanf_qq.png" alt="">
-    <img src="../img/xuanf_wx.png" alt="">
-    <img src="../img/xuanf_dh.png" alt="">
+    <img src="../img/xuanf_qq.png" alt="" class="qq">
+    <img src="../img/xuanf_wx.png" alt="" class="wx">
+    <img src="../img/xuanf_dh.png" alt="" class="tel">
     <div class="showBox">
-      
+      <div id='wx' style="display: none;">
+        <img src="../img/backg.png" alt="">
+        <p>扫码联系我们</p>
+      </div>
+      <div id='tel' style="display: none;">
+        <p>134100000787</p>
+      </div>
     </div>
   </div>
 
   <script>
-    $(function(){
-       var mySwiper = new Swiper('#banner', {
+    $(function () {
+      var mySwiper = new Swiper('#banner', {
         //direction: 'vertical', // 垂直切换选项
         loop: true, // 循环模式选项
-        autoplay:true,
+        autoplay: true,
         // 如果需要分页器
         pagination: {
           el: '.swiper-pagination',
         },
-      })  
+      })
       var swiper = new Swiper('#notice', {
         slidesPerView: 3,
         spaceBetween: 30,
@@ -138,8 +156,21 @@
           delay: 4000,
           stopOnLastSlide: false,
           disableOnInteraction: true,
-          },
+        },
       });
+    })
+
+
+    $(function () {
+      $('.qq').click(function () {
+        $('#qq').toggle()
+      })
+      $('.wx').click(function () {
+        $('#wx').toggle()
+      })
+      $('.tel').click(function () {
+        $('#tel').toggle()
+      })
     })
   </script>
 
